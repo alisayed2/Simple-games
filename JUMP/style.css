@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.game{
+    width: 1900px;
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 200px;
+    height: 300px;
+    margin-left: 150px;
+    background-image: url("images/carac.gif");
+    background-size: 200px 300px;
+    position:relative;
+    top: 280px;
+    
+}
+.animate{
+    animation: jump .3s linear;
+}
+@keyframes jump{
+    0%{top: 350px;}
+    30%{top: 70px;}
+    70%{top: 70px;}
+    100%{top: 350px;}
+}
+
+#block{
+    /* background-color: blue; */
+    background-image: url("images/g1.gif");
+    background-size: 125px 125px;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: 200px;
+    left: 1900px;
+    animation: block .9s infinite linear;
+}
+@keyframes block{
+    0%{left: 1900px}
+    100%{left: -60px}
+}
+p{
+    text-align: center;
+}
